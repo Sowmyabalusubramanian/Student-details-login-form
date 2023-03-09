@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title%}contact{% endblock %}
+{% block heading%}
+    <center>
+        <h1 style="color:blue;font-size:40px;">
+            Enter your information
+        </h1>
+</center>
+{% endblock %}
+{% block content %}
+<body style="background-color:lavender;">
+    <br><br>
+    <div>
+        <center>
+    <form method="POST">
+        
+        <label for="name">Name</label>
+        <input name="name", placeholder="Name"> <br><br>
+
+        <label for="name">Age</label>
+        <input name="age", placeholder="Age"><br><br>
+        
+        <label for="name">Mobile</label>
+        <input name="mobile", placeholder="mobile"><br><br>
+
+        <label for="name">Email</label>
+        <input name="email", placeholder="email"><br></br>
+        
+        <input type="submit"><br><br>
+    </form>
+</center>
+    </div>
+</body>
+{% endblock%}

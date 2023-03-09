@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></link>
+<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="home">Home</a>
+  <a href="news">News</a>
+  <a href="contact">Contact</a>
+  <a href="list">Showdata</a>
+  <a href="help" class="split">Help</a>
+</div>
+
+<div style="padding-left:20vmin">
+  <h2>{% block heading %}{% endblock %}</h2>
+  <p>{% block content %}{% endblock %}</p>
+</div>
+
+</body>
+</html>
