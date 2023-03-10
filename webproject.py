@@ -18,8 +18,8 @@ def contact():
 
 @app.route('/contact', methods=["POST"])
 def contact_post():
+    print(request.form)
     data = {}
-    if request.method == "POST":
         data["name"] = request.form['name']
         data["age"] = request.form['age']
         data["email"] = request.form["email"]
