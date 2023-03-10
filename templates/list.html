@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
+{% extends "base.html" %}
+{% block heading %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -54,12 +53,10 @@ tr:nth-child(even) {
         padding: 14px;
     }
 </style> 
-</head>
+{% endblock %}
+{% block content %}
 <body>
-<div class="search-container">
-    <input id="livebox" type="text"  style="width: auto; height: 40px;" type="text" placeholder="Search..." name="search">
-    <button  type="submit"><i class="fa fa-search"></i></button>
-</div>
+
 <table id="datalist">
 <tr>
     <th>S No</th>
@@ -79,6 +76,7 @@ tr:nth-child(even) {
 {% endfor %}
 </table>
 </body>
+{% endblock %}
 
 <script>
     $(document).ready(function(){
